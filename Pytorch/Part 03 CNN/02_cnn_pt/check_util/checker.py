@@ -62,7 +62,7 @@ def customized_dataset_check(dataset):
 
     try:
         if len(dataset) != 2000:
-            print(f'{dataset.mode}의 __len__ 함수가 train_data의 데이터 갯수를 2000이 아닌 {}으로 반환하고 있습니다. 가지고 있는 데이터셋 또는 __len__함수 구현에 문제가 없는지 다시 확인하시기 바랍니다.'.format(len(dataset)))
+            print(f'{dataset.mode}의 __len__ 함수가 train_data의 데이터 갯수를 2000이 아닌 {len(dataset)}으로 반환하고 있습니다. 가지고 있는 데이터셋 또는 __len__함수 구현에 문제가 없는지 다시 확인하시기 바랍니다.')
             len_flag = False
 
         label = dataset[0][1]
